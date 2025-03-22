@@ -8,3 +8,4 @@ Using `print()` function:
 5. Share `lesson-1/main.py` link into L1 Assignment section on Google Classroom
 
 Have fun! 🎉
+
