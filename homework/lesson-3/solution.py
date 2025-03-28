@@ -44,18 +44,19 @@ for multiplication10 in range(1, 11):
 
 #7. FizzBuzz
 for num20 in range(1, 21): 
-    if num20 % 3 == 0:
+    if   num20 % 3 == 0 and num20 % 5 == 0:
+        print("FizzBuzz")
+    elif num20 % 3 == 0:
         print("Fizz")
     elif num20 % 5 == 0:
         print("Buzz")
-    if   num20 % 3 == 0 and num20 % 5 == 0:
-        print("FizzBuzz")
     else: print(num20)
     
 #8. Leap year
 year = int(input("Please enter a year:"))
 print("The year you chose is:", year)
-if year % 4 == 0 and year % 100 != 0 or year % 100 ==0:
-    print(year, "is a leap year.")
-else: print(year, "is not a leap year.")
+if (year % 400 == 0) or (year % 4 == 0 and year % 100 !=0) or (year % 100 == 0 and year % 400 ==0):
+    print(year, " is a leap year.")
+else: 
+    print(year, " is not a leap year.")
 
