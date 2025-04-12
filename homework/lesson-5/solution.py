@@ -12,8 +12,12 @@ print("Current date and time:", current_time)
 def count_letters_print(text):
     count = 0
     for letter in text:
-        count += 1
-    print("Number of letters:", count)
+        if letter.isalpha():
+            count += 1
+    print("Number of letters:", str(count))
+
+count_letters_print("Amanda")
+count_letters_print("Am123an123da123")
 
 # Function with return
 def count_letters_return(text):
@@ -69,3 +73,14 @@ def play_game(user_choice):
 print(play_game(0))  # Try Rock
 print(play_game(1))  # Try Paper
 print(play_game(2))  # Try Scissors
+
+#Exercise 4 version with strings
+#import random
+#def play_game1(user_choice1):
+    #possible_move = ["Rock", "Paper", "Scissors"]
+    #computer_move = random.choice(possible_move)
+
+    #if computer_move == user_choice1
+        #print("It's a tie!")
+    #elif computer_move == "rock":
+       # if user_choice1 == 
